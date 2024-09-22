@@ -1,0 +1,45 @@
+body {
+    font-size: 20px;
+    font-style: Times New Roman;
+    border: 1px solid black;
+    font-weight: 500;
+}
+ 
+.content {
+    max-width: 600px;
+    margin: auto;
+ 
+    line-height: 1.5;
+}
+ 
+h5 {
+    color: #006EB6;
+    margin-bottom: 0px;
+  
+}
+ 
+header {
+    text-align: center;
+}
+
+.centered-text {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    border-bottom: 0.5px solid #2b2626;
+}
+
+ 
+li {
+    padding: 10px;
+}
+ 
+footer {
+    text-align: center;
+    padding: 25px
+}
+ 
+footer img {
+    width: 150px;
+ 
+}
