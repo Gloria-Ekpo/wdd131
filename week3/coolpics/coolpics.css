@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica, sans-serif;
+  --secondary-font: 'Mooli', sans-serif;
+}
+
+body {
+  background-color: gray;
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+  margin: 0;
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-family: var(--secondary-font);
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Gallery Layout (Mobile) */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.gallery img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Footer */
+footer p {
+  margin: 0;
+}
+
+/* Links */
+a:link, a:visited {
+  color: var(--accent-color);
+}
+
+/* Menu Button */
+#menu-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+@media screen and (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

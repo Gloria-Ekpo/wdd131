@@ -1,6 +1,6 @@
 body {
     font-size: 20px;
-    font-style: Times New Roman;
+    font-family: "Times New Roman", Times, serif;
     border: 1px solid black;
     font-weight: 500;
 }
@@ -8,16 +8,14 @@ body {
 .content {
     max-width: 600px;
     margin: auto;
- 
     line-height: 1.5;
 }
- 
+
 h5 {
     color: #006EB6;
     margin-bottom: 0px;
-  
 }
- 
+
 header {
     text-align: center;
 }
@@ -29,17 +27,34 @@ header {
     border-bottom: 0.5px solid #2b2626;
 }
 
- 
 li {
     padding: 10px;
 }
- 
+
 footer {
     text-align: center;
-    padding: 25px
+    padding: 25px;
 }
- 
+
 footer img {
     width: 150px;
- 
+}
+
+/* Dark theme styles */
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark h5 {
+    color: #68B8E2; 
+}
+
+.dark .centered-text {
+    border-bottom-color: #fff;
+}
+
+.dark footer img {
+    width: 150px;
+    
 }
