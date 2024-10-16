@@ -14,28 +14,35 @@
     <h1>Cool Pics <span>📷</span></h1>
     <nav>
         <button id="menu-btn">Menu</button>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">People</a></li>
-        <li><a href="#">Places</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <ul class=".hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="places.html">Places</a></li>
+            <li><a href="people.html">People</a></li>
+          </ul>
+        </nav>
+      </header>
 
   <main>
       <h2>Current Work</h2>
       <div class="gallery">
-        <figure><img src="norris-sm.jpeg" alt="Image 1"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 2"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 3"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 4"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 5"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 6"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 7"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 8"></figure>
-        <figure><img src="norris-sm.jpeg" alt="Image 9"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 1"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 2"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 3"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 4"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 5"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 6"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 7"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 8"></figure>
+        <figure><img src="norris-sm.jpeg" class="pics" alt="Image 9"></figure>
+      </div>
+
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <img id="modalImage" src="" />
+        </div>
       </div>
   </main>
 
