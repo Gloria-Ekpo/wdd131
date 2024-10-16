@@ -104,6 +104,10 @@ footer p {
     margin-top: 1rem;
   }
 
+  #menu-btn {
+    display: none; 
+  }
+
   h2 {
     text-align: center;
   }
@@ -121,7 +125,11 @@ footer p {
   }
 
   nav::after {
-    content: none; /* Remove the "Menu" text */
+    content: none; 
+  }
+
+  #menu-btn {
+    display: none; 
   }
 
   h2 {
