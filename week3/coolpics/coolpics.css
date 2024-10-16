@@ -17,7 +17,7 @@ body {
   margin: 0;
 }
 
-header, footer {
+header {
   background-color: var(--primary-color);
   color: var(--text-light);
   text-align: center;
@@ -26,16 +26,37 @@ header, footer {
 
 header h1 {
   font-family: var(--secondary-font);
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin: 0;
 }
 
-/* Gallery Layout (Mobile) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: var(--text-light);
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
+  justify-items: center;
 }
 
 .gallery img {
@@ -43,36 +64,83 @@ header h1 {
   height: 250px;
   object-fit: cover;
   max-width: 100%;
+  border: 5px solid white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Footer */
 footer p {
   margin: 0;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-light);
 }
 
-/* Links */
-a:link, a:visited {
-  color: var(--accent-color);
-}
-
-/* Menu Button */
-#menu-btn {
-  background-color: transparent;
-  border: none;
-  font-size: 1.2em;
-  color: var(--accent-color);
-  cursor: pointer;
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: block;
+    text-align: center;
   }
-  
-@media screen and (min-width: 700px) {
-    .gallery {
-      grid-template-columns: 1fr 1fr;
-    }
+
+  nav ul li {
+    margin: 1rem 0;
   }
-  
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+
+  nav::after {
+    content: 'Menu';
+    color: var(--text-light);
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav::after {
+    content: none; /* Remove the "Menu" text */
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  .gallery img {
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  }
+}
