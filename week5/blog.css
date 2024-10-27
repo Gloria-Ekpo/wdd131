@@ -6,26 +6,22 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-
-    color: #333
+    color: #333;
 }
 
 h1,
 h2 {
     font-family: 'Lora', serif;
-
 }
 
 header h1 {
     text-align: center;
     font-size: 4em;
-    
 }
 
 header h1 a {
     color: #333;
     text-decoration: none;
-
 }
 
 header h1 a:hover {
@@ -37,8 +33,6 @@ nav {
     border-top: #d0d0d0 1px solid;
     border-bottom: #d0d0d0 1px solid;
     font-family: "Lora", serif;
-
-
 }
 
 nav ul {
@@ -47,11 +41,10 @@ nav ul {
 
 nav li {
     padding: 0.5em;
-    list-style-type: none;
+    list-style-type: none; /* Removes bullet points */
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2em;
-    ;
 }
 
 li a,
@@ -59,7 +52,6 @@ h2 a,
 p a {
     text-decoration: none;
     color: #666;
-
 }
 
 li a:visited,
@@ -68,13 +60,11 @@ p a:visited {
     color: #666;
 }
 
-
 li a:hover,
 h2 a:hover,
 p a:hover {
     color: #00ddff;
 }
-
 
 li a:active,
 h2 a:active,
@@ -83,6 +73,7 @@ p a:active {
 }
 
 .post-date {
+    font-size: 1.2em; 
     text-align: right;
     text-transform: uppercase;
     border-bottom: #d0d0d0 1px solid;
@@ -90,41 +81,54 @@ p a:active {
     padding: 0.3em;
 }
 
+.post-details {
+    text-align: right;
+    border-right: 1px solid #d0d0d0;
+    padding-right: 1em;
+    margin-right: 1em;
+    list-style-type: none; 
+}
+
+.post-details li {
+    line-height: 1.2em; 
+}
+
 section {
     padding: 1em;
-
 }
 
 section p {
-
     font-weight: bold;
 }
 
 figure {
     text-align: center;
+    margin: 0 auto;
 }
 
+article {
+    margin-bottom: 2em; 
+}
 
+main {
+    max-width: 800px; 
+    margin: 0 auto;   
+}
 
 @media screen and (min-width:700px) {
     nav ul {
         display: flex;
         justify-content: right;
-
         margin: 0;
-
     }
 
     nav {
         margin-bottom: 1.2em;
-
-
     }
 
     article {
         display: grid;
         grid-template-columns: 200px 1fr;
-        ;
     }
 
     .post-date {
@@ -136,9 +140,10 @@ figure {
 
     .post-content {
         border-bottom: #d0d0d0 1px dotted;
-
-
     }
 
-
+    .post-content h2 {
+        margin-top: 0;
+        padding-top: 1.5em; 
+    }
 }
