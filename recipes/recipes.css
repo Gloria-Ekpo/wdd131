@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 
- 
 :root {
     --primary-color: #1B98E0;
     --secondary-color: #59c3c3;
@@ -10,7 +9,6 @@
     --secondary-font: "Amatic SC", cursive;
 }
  
- 
 body {
     font-family: var(--primary-font);
     line-height: 1.6;
@@ -18,7 +16,7 @@ body {
     padding: 0;
 }
  
-
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -83,11 +81,6 @@ h2 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
-header h1 {
-    font-family: "Amatic SC", cursive, "Comic Sans MS", sans-serif;
-    font-size: 3em; 
-}
-
  
 .recipe img {
     max-width: 100%;
